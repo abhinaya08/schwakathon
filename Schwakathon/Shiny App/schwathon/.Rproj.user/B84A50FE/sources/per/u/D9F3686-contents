@@ -1,0 +1,58 @@
+shell("cd C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper")
+shell("python C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper/crawlers.py -i stock.txt")
+
+system("wintop", wait=FALSE)
+
+shell()
+
+system("notepad myfile.txt")
+system("command.com")
+
+
+command = "python"
+
+# Note the single + double quotes in the string (needed if paths have spaces)
+path2script='"C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper/crawlers.py"'
+
+# Build up args in a vector
+string = "-i C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper/stock.txt"
+#pattern = "---"
+args = c(string, pattern)
+
+# Add path to script as first arg
+allArgs = c(path2script, string)
+
+#output = 
+  
+system2(command, args=allArgs)
+
+print(paste("The Substrings are:/n", output))
+
+system("python C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper/crawlers.py -i C:/Users/abhin/Documents/Schwathon/financeSpiders-master/financeSpiders-master/financeScraper/stock.txt",wait= FALSE)
+
+system2("python crawlers.py -i stock.txt")
+
+
+recommendation <- read.csv("return_simulation_5range_interest.csv")
+f <- list(
+  family = "Courier New, monospace",
+  size = 18,
+  color = "#7f7f7f"
+)
+x <- list(
+  title = "Return when principle = $100000",
+  titlefont = f
+)
+y <- list(
+  title = "Density",
+  titlefont = f
+)
+plot_ly(recommendation, x = ~V1,type="histogram",colors = "red") %>%
+  layout(xaxis = x, yaxis = y)
+
+rsconnect::setAccountInfo(name='abhinaya08',
+                          token='C0E9113E42F5253F5D68E24A7BBC7EE5',
+                          secret='IPiBfxoffx0aX43lopkFKvxL5idb8NF1X+gXtlH+')
+
+library(rsconnect)
+rsconnect::deployApp('path/to/your/app')

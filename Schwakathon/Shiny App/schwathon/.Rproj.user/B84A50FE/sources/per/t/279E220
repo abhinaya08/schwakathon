@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548482190710.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1816563019",
+    "id" : "279E220",
+    "lastKnownWriteTime" : 1548523738,
+    "last_content_update" : 1548523738993,
+    "path" : "~/Schwathon/Shiny App/schwathon/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "18,30",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
