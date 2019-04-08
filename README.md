@@ -1,4 +1,4 @@
 # Hackathon competition at Charles Schwab
 
-Real time news analyzing R-Shiny dashboard
+Simulating client portfolios and analyzing current news articles (related to the stocks in the portfolio) and displaying the results on a R-Shiny dashboard
 
